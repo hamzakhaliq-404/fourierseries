@@ -1,0 +1,101 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: #212121;
+  font-family: "Montserrat", sans-serif;
+}
+.heading {
+  color: #fafafa;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+#canvas {
+  background-color: #212121;
+  position: relative;
+}
+
+.inputs {
+  margin: 3rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.start-btn {
+  margin-left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #fafafa;
+  font-size: 1.2rem;
+  font-weight: 200;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: rgb(94, 130, 248);
+}
+
+.start-btn.running {
+  background-color: rgb(248, 94, 94);
+}
+.start-btn.running:hover {
+  background-color: rgb(238, 77, 77);
+}
+
+.start-btn:hover {
+  background-color: rgb(68, 110, 247);
+}
+
+.inputs label {
+  font-weight: 500;
+
+  margin-bottom: 0.5rem;
+}
+
+.inputs > div {
+  /* margin-right: 1rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+#circle-number {
+  background-color: transparent;
+  color: #fafafa;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+#circle-number:focus {
+  border-bottom: 1px solid #fafafa;
+}
+#circle-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+footer {
+  text-align: end;
+}
+footer a {
+  color: rgb(94, 130, 248);
+  margin-right: 2rem;
+}
